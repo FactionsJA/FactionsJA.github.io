@@ -28,7 +28,9 @@
 									<div id="form-message-success" class="mb-4">
 										Your message was sent, thank you!
 									</div>
-									<form method="POST" id="contactForm" name="contactForm" class="contactForm">
+									<form id="fs-frm" name="simple-contact-form" accept-charset="utf-8"
+										action="https://formspree.io/f/xyyagowj" method="post">
+										<input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
 										<div class="row">
 											<div class="col-md-6">
 												<div class="form-group">
@@ -39,13 +41,13 @@
 											<div class="col-md-6">
 												<div class="form-group">
 													<label class="label" for="email">Email Address</label>
-													<input type="email" class="form-control" name="email" id="email" placeholder="Email">
+													<input type="email" class="form-control" name="_replyto" id="email" placeholder="Email">
 												</div>
 											</div>
 											<div class="col-md-12">
 												<div class="form-group">
 													<label class="label" for="subject">Subject</label>
-													<input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
+													<input type="text" class="form-control" name="subject-custom" id="subject-custom" placeholder="Subject">
 												</div>
 											</div>
 											<div class="col-md-12">
@@ -75,8 +77,6 @@
 	<script src="js/jquery.min.js"></script>
 	<script src="js/popper.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery.validate.min.js"></script>
-	<script src="js/main.js"></script>
 
 </body>
 
